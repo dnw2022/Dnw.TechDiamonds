@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="wwwroot\img\page-header" />
+        <Folder Include="wwwroot\img\Projects" />
+        <Folder Include="wwwroot\img\team" />
+        <Folder Include="wwwroot\vendor" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Products\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Projects\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Services\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Team\Index.cshtml" />
+    </ItemGroup>
+
+</Project>

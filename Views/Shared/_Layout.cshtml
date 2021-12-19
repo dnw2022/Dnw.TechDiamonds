@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>@ViewData["Title"] - TechDiamonds - Hold on to your most precious people</title>
+
+    <meta name="keywords" content="TechDiamonds"/>
+    <meta name="description" content="TechDiamonds - Hold on to your most precious people">
+    <meta name="author" content="DotnetWorks">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="~/img/apple-touch-icon.png">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="~/vendor/animate/animate.compat.css">
+    <link rel="stylesheet" href="~/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="~/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/vendor/magnific-popup/magnific-popup.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="~/css/theme.css">
+    <link rel="stylesheet" href="~/css/theme-elements.css">
+    <link rel="stylesheet" href="~/css/theme-blog.css">
+
+    <!-- Skin CSS -->
+    <link id="skinCSS" rel="stylesheet" href="~/css/skins/default.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="~/css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="~/vendor/modernizr/modernizr.min.js"></script>
+</head>
+<body id="body" class="one-page alternative-font-5" data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
+	<div class="body">
+
+	    <header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+    		<div class="header-body border-top-0 bg-dark box-shadow-none">
+    			<div class="header-container container">
+    				<div class="header-row">
+    					<div class="header-column">
+    						<div class="header-row">
+    							<div class="header-logo">
+    								<a href="/">
+    									<img alt="Porto" width="123" height="60" src="img/logos/tech_diamonds_logo_dark_bg.001.png">
+    								</a>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="header-column justify-content-end">
+    						<div class="header-row">
+    							<div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+    								<div class="header-nav-main header-nav-main-font-lg header-nav-main-font-lg-upper-2 header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+    									<nav class="collapse">
+											@await Html.PartialAsync("_Nav")
+    									</nav>
+    								</div>
+    								<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+    									<i class="fas fa-bars"></i>
+    								</button>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+	    </header>
+	    
+		@RenderBody()
+
+		<section id="contact" class="section section-height-3 bg-primary border-0 m-0 appear-animation" data-appear-animation="fadeIn">
+			<footer id="footer">
+			<div class="container">
+				<div class="footer-ribbon">
+					<span>Contact us</span>
+				</div>
+				<div class="row py-5 my-4">
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<div class="contact-details">
+							<h5 class="text-3 mb-3">Our contact details</h5>
+							<ul class="list list-icons list-icons-lg">
+								<li class="mb-1">
+									<i class="far fa-dot-circle text-color-primary"></i>
+									<p class="m-0">Zenderstraat 100<br/>1223 DK Hilversum<br/>Netherlands</p>
+								</li>
+								<li class="mb-1">
+									<i class="fab fa-whatsapp text-color-primary"></i>
+									<p class="m-0">
+										<a href="tel:8001234567">+31-(0)626726492</a>
+									</p>
+								</li>
+								<li class="mb-1">
+									<i class="far fa-envelope text-color-primary"></i>
+									<p class="m-0">
+										<a href="mailto:mail@example.com">info.dotnetworks@gmail.com</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					@* <div class="col-md-6 col-lg-2"> *@
+					@*     <h5 class="text-3 mb-3">FOLLOW US</h5> *@
+					@*     <ul class="social-icons"> *@
+					@*         <li class="social-icons-facebook"> *@
+					@*             <a href="http://www.facebook.com/" target="_blank" title="Facebook"> *@
+					@*                 <i class="fab fa-facebook-f"></i> *@
+					@*             </a> *@
+					@*         </li> *@
+					@*         <li class="social-icons-twitter"> *@
+					@*             <a href="http://www.twitter.com/" target="_blank" title="Twitter"> *@
+					@*                 <i class="fab fa-twitter"></i> *@
+					@*             </a> *@
+					@*         </li> *@
+					@*         <li class="social-icons-linkedin"> *@
+					@*             <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"> *@
+					@*                 <i class="fab fa-linkedin-in"></i> *@
+					@*             </a> *@
+					@*         </li> *@
+					@*     </ul> *@
+					@* </div> *@
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container py-2">
+					<div class="row py-4">
+						<div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
+							<a href="/" class="logo pe-0 pe-lg-3">
+								<img alt="Porto Website Template" src="~/img/logos/dotnetworks_dark3.001.png" class="opacity-5" width="98" height="44" data-plugin-options="{'appearEffect': 'fadeIn'}">
+							</a>
+						</div>
+						<div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+							<p>© Copyright 2021. All Rights Reserved.</p>
+						</div>
+						@* <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end"> *@
+						@* 	<nav id="sub-menu"> *@
+						@* 		<ul> *@
+						@*                         <li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="ms-1 text-decoration-none"> Sitemap</a></li> *@
+						@* 			<li><i class="fas fa-angle-right"></i><a href="contact-us.html" class="ms-1 text-decoration-none"> Contact Us</a></li> *@
+						@* 		</ul> *@
+						@* 	</nav> *@
+						@* </div> *@
+					</div>
+				</div>
+			</div>
+		</footer>
+		</section>
+	</div>
+
+	<!-- Vendor -->
+	<script src="~/vendor/jquery/jquery.min.js"></script>
+	<script src="~/vendor/jquery.appear/jquery.appear.min.js"></script>
+	<script src="~/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script src="~/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+	<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="~/vendor/jquery.validation/jquery.validate.min.js"></script>
+	<script src="~/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+	<script src="~/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+	<script src="~/vendor/lazysizes/lazysizes.min.js"></script>
+	<script src="~/vendor/isotope/jquery.isotope.min.js"></script>
+	<script src="~/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script src="~/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="~/vendor/vide/jquery.vide.min.js"></script>
+	<script src="~/vendor/vivus/vivus.min.js"></script>
+
+	<!-- Theme Base, Components and Settings -->
+	<script src="~/js/theme.js"></script>
+
+	<!-- Examples -->
+	@* <script src="~/js/examples/examples.portfolio.js"></script> *@
+
+	<!-- Theme Custom -->
+	<script src="~/js/custom.js"></script>
+
+	<!-- Theme Initialization Files -->
+	<script src="~/js/theme.init.js"></script>
+
+	@await RenderSectionAsync("Scripts", false)
+	</body>
+</html>
