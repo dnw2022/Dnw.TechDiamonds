@@ -5,7 +5,7 @@ az webapp up --os-type linux
 to create initial web app:
 
 az login
-az webapp up --sku B1 --location westeurope --name freelance-direkt --os-type linux  --resource-group dnw-rg  --plan dnw-plan
+az webapp up --sku B1 --location westeurope --name techdiamonds --os-type linux --resource-group dnw-rg --plan dnw-plan
 
 to remove resources:
 
