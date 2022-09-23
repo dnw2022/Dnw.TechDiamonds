@@ -8,6 +8,7 @@
     "AspNetCoreFunction": {
       "Type": "AWS::Serverless::Function",
       "Properties": {
+        "FunctionName": "Dnw-TechDiamonds",
         "Handler": "Dnw.TechDiamonds",
         "Architectures": [ "x86_64" ],
         "Runtime": "provided.al2",

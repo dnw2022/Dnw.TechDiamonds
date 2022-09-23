@@ -7,7 +7,7 @@ Website of TechDiamonds: https://td.dotnet-works.com
 After initial setup (see below) you can create / update the aws lambda with this cli command:
 
 ```
-dotnet lambda deploy-serverless --stack-name Td-Website --s3-bucket dnw-templates-2022
+dotnet lambda deploy-serverless --stack-name Dnw-TechDiamonds --s3-bucket dnw-templates-2022
 ```
 
 And to test your changes:
